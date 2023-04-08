@@ -47,10 +47,10 @@ jobs:
           name: node-app
 
       - name: Install dependencies and run seed script
-              run: |
-                cd node-app
-                npm install
-                npm run seed
+        run: |
+          cd node-app
+          npm install
+          npm run seed
                 
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
