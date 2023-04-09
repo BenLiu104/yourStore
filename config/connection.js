@@ -11,6 +11,7 @@ if (process.env.JAWSDB_URL) {
     process.env.DB_USER,
     process.env.DB_PASSWORD,
     {
+      // use private network db
       host: 'yourstore-mysqldb.mysql.database.azure.com',
       dialect: 'mysql',
       port: 3306,
