@@ -16,13 +16,10 @@ if (process.env.JAWSDB_URL) {
       // host: 'yourstore-db.mysql.database.azure.com',
       dialect: 'mysql',
       port: 3306,
-      // dialectOptions: {
-      //   ssl: {
-      //     ca: 'process.env.MYSQL_CA_CERT',
-      //   },
-      // },
-      ssl: {
-        ca: fs.readFileSync('/test/DigiCertGlobalRootCA.crt (1).pem'),
+      dialectOptions: {
+        ssl: {
+          ca: fs.readFileSync('/test/DigiCertGlobalRootCA.crt (1).pem'),
+        },
       },
     }
   );
